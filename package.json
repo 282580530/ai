@@ -1,0 +1,35 @@
+{
+	"name": "Vue3",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"files": [
+		"dist"
+	],
+	"main": "./dist/test-btn.umd.js",
+	"module": "./dist/test-btn.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/test-btn.es.js",
+			"require": "./dist/test-btn.umd.js"
+		}
+	},
+	"dependencies": {
+		"@element-plus/icons-vue": "^2.0.10",
+		"axios": "^1.2.0",
+		"element-plus": "^2.9.0",
+		"sass": "^1.86.0",
+		"vant": "^4.9.18",
+		"vue": "^3.2.41",
+		"vue-filepond": "^7.0.4",
+		"vue-router": "^4.0.13"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^1.6.0",
+		"@vue/compiler-sfc": "^3.2.6",
+		"vite": "^2.5.2"
+	}
+}
